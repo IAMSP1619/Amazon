@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amzlogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   <div class="container">
+    <div class="login-box">
+        <div>
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+                <label for="remember"><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" onclick="login()">Login</button>
+            <div class="register-link">
+                <a href="#">Dont't have an account? Create Now!</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <script>
+    let login=()=>{
+        let iref=document.getElementsByTagName('input')
+        console.log(iref[0].value)
+        if(iref[0].value=='admin12@gmail.com' && iref[1].value=='1234')
+        {
+            window.location='index.html'
+            console.log('login')
+        }
+    }
+</script>
+</body>
+</html>
